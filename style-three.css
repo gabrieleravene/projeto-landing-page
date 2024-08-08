@@ -1,58 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); 
+
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 header{
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #635EF2;
 }
 
 .logo{
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.navbar ul li{
-    display: inline-block;
-    margin-right: 20px;
+    color:#E6E6E6;
+    padding-left: 50px;
     font-weight: 600;
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    color:rgb(71, 71, 71);
-}
-
-.btn a{
-    text-decoration: none;
-    color:blueviolet;
-}
-
-.btn{
-    padding: 15px;
-    border-radius: 8px;
-    border:1px solid gray;
     font-size: 15px;
-    font-weight: 600;
-}
-
-.content{
-    display: flex;
-}
-
-.content p{
-    width: 800px;
     text-align: center;
 }
 
+.navbar .nav-items li{
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.navbar .nav-items li a{
+    text-decoration: none;
+    color:#E6E6E6;
+    font-weight: 600;
+}
+
+.navbar .nav-items li a:hover{
+    color:#fff;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border:1px solid #635EF2;
+    background-color: #E6E6E6;
+    color:#414059;
+}
+
+.container{
+    display: flex;
+    padding: 50px;
+    margin-left: 80px;
+}
+
+.main{
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.text{
+    width:500px;
+    margin-bottom: 5px;
+}
+
+input{
+    display: block;
+    margin-top: 8px;
+    border-radius: 3px;
+    border:1px solid #E6E6E6;
+    padding:5px;
+    width:300px;
+    height: 50px;
+    background-color:#E6E6E6;
+}
+
+.submit-btn{
+    display: block;
+    margin-top: 8px;
+    padding:12px;
+    width: 150px;
+    background-color:#635EF2;
+    color:#fff;
+    border-radius: 3px;
+    border: 1px solid #635EF2;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+}
+
+.main h1{
+    font-size: 40px;
+}
+
+.second-title{
+    color:#635EF2;
+}
+
+/*  O display: flex; afeta apenas os filhos diretos do elemento ao qual é aplicado, não os netos ou elementos em níveis mais profundos da hierarquia.  */
