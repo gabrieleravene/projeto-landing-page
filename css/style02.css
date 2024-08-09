@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(img/unplash.jpg);
+    background-image: url('../img/unplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
